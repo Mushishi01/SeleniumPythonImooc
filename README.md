@@ -1,2 +1,0 @@
-# SeleniumPythonImooc
-seleniumpythonimooc第一次创建
