@@ -3,7 +3,7 @@ from selenium import webdriver
 import time
 import random
 from PIL import Image
-from ShowapiRequest import ShowapiRequest
+from util.ShowapiRequest import ShowapiRequest
 driver = webdriver.Chrome()
 #浏览器初始化
 def driver_init(): 

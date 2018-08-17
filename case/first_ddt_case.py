@@ -9,9 +9,13 @@ from selenium import webdriver
 import HTMLTestRunner
 from util.excel_util import ExcelUtil
 import os
+from log.user_log import UserLog
 import time
 ex = ExcelUtil()
 data = ex.get_data()
+log = UserLog()
+logger = log.get_log()
+file_name = "E:/Teacher/Imooc/SeleniumPython/Image/test001.png"
 #邮箱、用户名、密码、验证码、错误信息定位元素、错误提示信息
 @ddt.ddt
 class FirstDdtCase(unittest.TestCase):
@@ -19,6 +23,7 @@ class FirstDdtCase(unittest.TestCase):
         self.driver = webdriver.Chrome()
         self.driver.get('http://www.5itest.cn/register')
         self.login = RegisterBusiness(self.driver)
+
 
     def tearDown(self):
         time.sleep(2)
@@ -40,8 +45,8 @@ class FirstDdtCase(unittest.TestCase):
     '''
     @ddt.data(*data)
     def test_register_case(self,data):
-        email,username,password,code,assertCode,assertText = data
-        email_error = self.login.register_function(email,username,password,code,assertCode,assertText)
+        email,username,password,self.file_name,assertCode,assertText = data
+        email_error = self.login.register_function(email,username,password,self.file_name,assertCode,assertText)
         self.assertFalse(email_error,"测试失败")
 
 if __name__ == '__main__':

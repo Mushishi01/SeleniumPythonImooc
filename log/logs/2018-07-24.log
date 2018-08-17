@@ -1,0 +1,9 @@
+2018-07-24 16:36:58,574 first_case.py--> setUp 20: INFO ----->this is chrome
+2018-07-24 16:36:58,577 register_handle.py--> send_user_email 20: INFO ----->输入的邮箱值是：1111@qq.com
+2018-07-24 16:36:58,579 find_element.py--> get_element 20: INFO ----->定位方式:id--->定位值:register_email
+2018-07-24 16:36:58,734 register_handle.py--> send_user_name 20: INFO ----->输入的用户名是：ss2221
+2018-07-24 16:36:58,735 find_element.py--> get_element 20: INFO ----->定位方式:id--->定位值:register_nickname
+2018-07-24 16:36:59,037 register_handle.py--> send_user_password 20: INFO ----->输入的密码是：111111
+2018-07-24 16:36:59,039 find_element.py--> get_element 20: INFO ----->定位方式:id--->定位值:register_password
+2018-07-24 16:37:02,242 find_element.py--> get_element 20: INFO ----->定位方式:id--->定位值:captcha_code
+2018-07-24 16:37:02,361 find_element.py--> get_element 20: INFO ----->定位方式:id--->定位值:register-btn
